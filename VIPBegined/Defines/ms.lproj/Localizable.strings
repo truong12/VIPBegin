@@ -1,0 +1,64 @@
+/*
+  Localizable.strings
+  Durian
+
+  Created by Le Tuan on 2/3/21.
+
+*/
+
+"key" = "*value";
+
+// MARK: - Button title
+"alert.title.camera.access" = "*Camera Access Required";
+"alert.body.camera.access" = "*Unable to scan QR code without access to camera. Would you like to open and update Settings now?";
+"alert.body.camera.access.upload.avatar" = "*Durian requires access to camera to take your profile picture. Would you like to open and update Settings now?";
+"alert.button.ok" = "*OK";
+"alert.button.cancel" = "*Cancel";
+"alert.button.settings" = "*Settings";
+"button.login" = "*Login";
+"button.next" = "*Next";
+"button.confirm" = "*Confirm";
+"button.logout" = "*Logout";
+"button.close" = "*Close";
+"button.lauch.qr.scanner" = "*Lauch QR Scanner";
+
+// MARK: - Tabbar
+"tabbar.scanner" = "*Scanner";
+"tabbar.entries" = "*Entries";
+"tabbar.settings" = "*Settings";
+
+// MARK: - QR Code
+"scan.qr.add.new.place" = "*Scan to add";
+"scan.qr.align.qr.code" = "*Align QR Code on the frame to scan";
+"scan.title" = "*Scan";
+"scan.wrong.qr.code.show" = "*Seems like you have scanned an invalid QR Code. Please scan a valid Lylt QR Code.";
+"scan.wrong.qr.code.got.it" = "*Got it";
+
+// MARK: - Login
+"login.user.id" = "*User ID";
+"login.password" = "*Password";
+
+// MARK: - Language
+"language.title" = "*Language Selection";
+"language.sub.title" = "*Please select your preferred language";
+"language.english" = "*English";
+"language.malaysia" = "*Malaysia";
+
+// MARK: - Settings
+"settings.navi.title" = "*Settings";
+"setting.profile" = "*Profile";
+"setting.name" = "*Name";
+"setting.mobile.number" = "*Mobile Number";
+"setting.language.settings" = "*Language settings";
+"setting.data.auto.sync" = "*Data auto-sync";
+
+// MARK: - Scanner
+"scanner.navi.title" = "*QR Scanner";
+"scanner.welcome" = "*Hello, %@";
+
+// MARK: - Entries
+"entries.navi.title" = "*Entries";
+
+// MARK: - Language Setting
+"language.setting.navi.title" = "*Language setting";
+"language.setting.select.preferred.language" = "*Select preferred language";

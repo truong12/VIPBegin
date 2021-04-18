@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="Xk3-uB-NhW">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="sTe-3F-yFC" customClass="SettingsViewController" customModule="Durian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKt-Ta-7Wk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vp-8p-VJQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-6d-v0A" customClass="NaviBarView" customModule="Durian" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="KVL-U1-Y4q"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-9P-zD0">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="670"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5H-Un-8Ci" customClass="BaseBorderButton" customModule="Durian" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="746" width="98" height="48"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="vQI-9f-pvW"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutAction:" destination="sTe-3F-yFC" eventType="touchUpInside" id="PjT-Ni-1Ny"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MQ9-6d-v0A" firstAttribute="top" secondItem="7vp-8p-VJQ" secondAttribute="top" id="6Kq-tw-i7v"/>
+                                    <constraint firstItem="MQ9-6d-v0A" firstAttribute="leading" secondItem="7vp-8p-VJQ" secondAttribute="leading" id="KyK-Kh-Ibj"/>
+                                    <constraint firstAttribute="bottom" secondItem="a5H-Un-8Ci" secondAttribute="bottom" constant="24" id="Ycs-gU-xwH"/>
+                                    <constraint firstItem="a5H-Un-8Ci" firstAttribute="leading" secondItem="7vp-8p-VJQ" secondAttribute="leading" constant="16" id="dAl-my-FU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQ9-6d-v0A" secondAttribute="trailing" id="icm-fV-Wle"/>
+                                    <constraint firstItem="1m6-9P-zD0" firstAttribute="leading" secondItem="7vp-8p-VJQ" secondAttribute="leading" id="kB1-8t-pSL"/>
+                                    <constraint firstItem="1m6-9P-zD0" firstAttribute="top" secondItem="MQ9-6d-v0A" secondAttribute="bottom" id="rof-Wo-rA6"/>
+                                    <constraint firstItem="a5H-Un-8Ci" firstAttribute="top" secondItem="1m6-9P-zD0" secondAttribute="bottom" constant="16" id="tJL-8X-wcV"/>
+                                    <constraint firstAttribute="trailing" secondItem="1m6-9P-zD0" secondAttribute="trailing" id="znJ-Co-hqK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oax-KN-jVw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oax-KN-jVw" firstAttribute="trailing" secondItem="7vp-8p-VJQ" secondAttribute="trailing" id="086-MF-luq"/>
+                            <constraint firstItem="Oax-KN-jVw" firstAttribute="bottom" secondItem="7vp-8p-VJQ" secondAttribute="bottom" id="LWX-Gy-e93"/>
+                            <constraint firstItem="7vp-8p-VJQ" firstAttribute="leading" secondItem="Oax-KN-jVw" secondAttribute="leading" id="Pid-qv-9aR"/>
+                            <constraint firstItem="7vp-8p-VJQ" firstAttribute="top" secondItem="Oax-KN-jVw" secondAttribute="top" id="qx0-MO-QHF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoutButton" destination="a5H-Un-8Ci" id="IMj-TL-etI"/>
+                        <outlet property="naviView" destination="MQ9-6d-v0A" id="B94-rl-jkt"/>
+                        <outlet property="tableView" destination="1m6-9P-zD0" id="8E8-N0-of9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4H-Y7-cGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="113"/>
+        </scene>
+    </scenes>
+</document>
